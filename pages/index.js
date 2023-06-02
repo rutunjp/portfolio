@@ -22,12 +22,12 @@ export default function Home() {
 
       <div className="flex flex-col items-center bg-skin w-4/6 pt-10 gap-6 ">
         <h2 className="font-bold text-4xl">Projects</h2>
-        <div className="flex flex-row gap-8">
+        {/* <div className="flex flex-row gap-8">
           <button className="category-button  bg-lightOrange">
             Development
           </button>
           <button className="category-button">Design</button>
-        </div>
+        </div> */}
         <div className="flex flex-row justify-center flex-wrap gap-16 gap-y-12 ">
           <Card />
           <Card />
