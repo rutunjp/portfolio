@@ -2,26 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.solid-drop-shadow {
+  box-shadow: 0 0 0 1.4px #000000;
+}
+.solid-drop-shadow-lg {
+  box-shadow: 2px 2px 0 2px #000000;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.another-drop-shadow:hover {
+  transition: 300ms;
+  box-shadow: 0px 0px 0 6px #eacd92;
 }
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.category-button {
+  outline: 1.5px solid black;
+  font-size: medium;
+  border-radius: 16rem;
+  padding: 12px;
 }
